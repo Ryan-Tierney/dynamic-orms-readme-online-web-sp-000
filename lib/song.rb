@@ -41,8 +41,6 @@ class Song
     self.class.table_name
   end
 
-44444444444444444444444444444
-
   def col_names_for_insert
     self.class.column_names.delete_if {|col| col == "id"}.join(", ")
   end
