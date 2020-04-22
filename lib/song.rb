@@ -41,13 +41,7 @@ class Song
     self.class.table_name
   end
 
-  def values_for_insert
-    values = []
-    self.class.column_names.each do |col_name|
-      values << "'#{send(col_name)}'" unless send(col_name).nil?
-    end
-    values.join(", ")
-  end
+44444444444444444444444444444
 
   def col_names_for_insert
     self.class.column_names.delete_if {|col| col == "id"}.join(", ")
